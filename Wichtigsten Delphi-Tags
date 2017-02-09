@@ -1,30 +1,30 @@
-strtoint()              // String to int      //Text in Ganzrationale Zahl umwandeln
-strtofloat()            // String in Dezimalzahl umwandeln
-inttostr()              // Integer to str     //Ganzrationale Zahl in Text umwandeln
-floattostr()            // Dezimalzahl bzw. irrationale Zahl in String (Textfeld) umwandeln
+strtoint()                                                      // String to int      //Text in Ganzrationale Zahl umwandeln
+strtofloat()                                                    // String in Dezimalzahl umwandeln
+inttostr()                                                      // Integer to str     //Ganzrationale Zahl in Text umwandeln
+floattostr()                                                    // Dezimalzahl bzw. irrationale Zahl in String (Textfeld) umwandeln
 floattostrf(Variable, Format, Genauigkeit, Nachkommastellen)    // Wie FloatToStr nur "Schöner" 
                                                                 // z.B. Variable = Zahl1, Format = ffNumber, Genauigkeit = 7, Nachkommastellen = 3)                                                  
-AB.Caption:='Text'      // AB=bezeichner z.B.: Button    // Text = angezeigter Text
-  .Visible:=False       // Lässt den Bezeichner AB verschwinden bzw. auftauchen  
-  .Default:=True        // Der Bezeichner AB lässt sich mit der Taste enter ausführen z.B. ein Knopf
-beep                    // Windows-Ton abspielen
-sleep (1000)            // Wartet 1000 milisekunden bevor der nächste Befehl ausgeführt wird
-AB.Font.Size            // ändert die Schriftgröße
-       .Color           // ändert die Farbe usw.
+AB.Caption:='Text'                                              // AB=bezeichner z.B.: Button    // Text = angezeigter Text
+  .Visible:=False                                               // Lässt den Bezeichner AB verschwinden bzw. auftauchen  
+  .Default:=True                                                // Der Bezeichner AB lässt sich mit der Taste enter ausführen z.B. ein Knopf
+beep                                                            // Windows-Ton abspielen
+sleep (1000)                                                    // Wartet 1000 milisekunden bevor der nächste Befehl ausgeführt wird
+AB.Font.Size                                                    // ändert die Schriftgröße
+       .Color                                                   // ändert die Farbe usw.
        
-a:real;                 // Integer to Real
-b:integer;              // Ganzrationale Zahl in Irrationale Zahl umwandeln
-a := round(b);          // praktisch inttoreal nur umgeschrieben, da inttoreal nicht existiert
-randomize               // Tag gehört immer oberhalb der random-tags um diese zu "aktivieren"
-a := random(xy)         // a wird eine zufällige Zahl von 0 bis xy-1 zugewiesen
-div                     // ersetzt das Rechenzeichen "/" bei Integer allerdings werden die Stellen 
-                           nach dem Komma nicht angezeigt
-mod(a/b)                // Rest einer Ganzzahldivision
-var a:single;           // Andere Bezeichnung für Float oder Real - Gibt Dezimalzahlen an
-    b:double;           // wie single aber meist unnötig - gibt ein genaueres Ergebnis an
-showmessage('xy')       // xy = Text der angezeigt wird z.B. Fehlermeldung    
-> <                     // kleiner - größer als
-=                       // gleich
-<>                      // ungleich
-<==                     // kleiner oder gleich
->==                     // größer oder gleich
+a:real;                                                         // Integer to Real
+b:integer;                                                      // Ganzrationale Zahl in Irrationale Zahl umwandeln
+a := round(b);                                                  // praktisch inttoreal nur umgeschrieben, da inttoreal nicht existiert
+randomize                                                       // Tag gehört immer oberhalb der random-tags um diese zu "aktivieren"
+a := random(xy)                                                 // a wird eine zufällige Zahl von 0 bis xy-1 zugewiesen
+div                                                             // ersetzt das Rechenzeichen "/" bei Integer allerdings werden die Stellen 
+                                                                   nach dem Komma nicht angezeigt
+mod(a/b)                                                        // Rest einer Ganzzahldivision
+var a:single;                                                   // Andere Bezeichnung für Float oder Real - Gibt Dezimalzahlen an
+    b:double;                                                   // wie single aber meist unnötig - gibt ein genaueres Ergebnis an
+showmessage('xy')                                               // xy = Text der angezeigt wird z.B. Fehlermeldung    
+> <                                                             // kleiner - größer als
+=                                                               // gleich
+<>                                                              // ungleich
+<==                                                             // kleiner oder gleich
+>==                                                             // größer oder gleich
