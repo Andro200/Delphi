@@ -10,7 +10,7 @@ AB.Caption:='Text'                                              // AB=bezeichner
 beep                                                            // Windows-Ton abspielen
 sleep (1000)                                                    // Wartet 1000 milisekunden bevor der nächste Befehl ausgeführt wird
 AB.Font.Size                                                    // ändert die Schriftgröße
-       .Color                                                   // ändert die Farbe usw.
+AB.Caption.Color                                                // ändert die Farbe usw.
 
 Variablen
 Integer                                                         // Rationale Zahl
@@ -30,7 +30,8 @@ div                                                             // ersetzt das R
 mod(a/b)                                                        // Rest einer Ganzzahldivision
 var a:single;                                                   // Andere Bezeichnung für Float oder Real - Gibt Dezimalzahlen an
     b:double;                                                   // wie single aber meist unnötig - gibt ein genaueres Ergebnis an
-showmessage('xy')                                               // xy = Text der angezeigt wird z.B. Fehlermeldung    
+showmessage('xy')                                               // xy = Text der angezeigt wird z.B. Fehlermeldung 
+length (Edit1.Text)                                             // Anzahl der Buchstaben in Edit1.Text
 > <                                                             // kleiner - größer als
 =                                                               // gleich
 <>                                                              // ungleich
