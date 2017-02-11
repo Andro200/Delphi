@@ -11,7 +11,15 @@ beep                                                            // Windows-Ton a
 sleep (1000)                                                    // Wartet 1000 milisekunden bevor der nächste Befehl ausgeführt wird
 AB.Font.Size                                                    // ändert die Schriftgröße
        .Color                                                   // ändert die Farbe usw.
-       
+
+Variablen
+Integer                                                         // Rationale Zahl
+Int64                                                           // Wie Integer nur mit einer vieel größeren Auswahl an Zahlen (meist unnötig)
+Real                                                            // Kommazahlen
+Double                                                          // Kommazahlen
+Char                                                            // Ein Buchstabe
+String                                                          // Wörter bzw. Sätze
+
 a:real;                                                         // Integer to Real
 b:integer;                                                      // Ganzrationale Zahl in Irrationale Zahl umwandeln
 a := round(b);                                                  // praktisch inttoreal nur umgeschrieben, da inttoreal nicht existiert
