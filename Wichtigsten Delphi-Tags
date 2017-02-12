@@ -28,8 +28,10 @@ a := random(xy)                                                 // a wird eine z
 div                                                             // ersetzt das Rechenzeichen "/" bei Integer allerdings werden die Stellen 
                                                                    nach dem Komma nicht angezeigt
 mod(a/b)                                                        // Rest einer Ganzzahldivision
+const Max = 12                                                  // Wird vor var vereinbart eine Feste Konstante, die nicht geändert werden kann 
 var a:single;                                                   // Andere Bezeichnung für Float oder Real - Gibt Dezimalzahlen an
     b:double;                                                   // wie single aber meist unnötig - gibt ein genaueres Ergebnis an
+    c:boolean;                                                  // Datentyp c , dem wahr oder falsch zugeordnet werden kann
 showmessage('xy')                                               // xy = Text der angezeigt wird z.B. Fehlermeldung 
 length (Edit1.Text)                                             // Anzahl der Buchstaben in Edit1.Text
 > <                                                             // kleiner - größer als
@@ -37,3 +39,27 @@ length (Edit1.Text)                                             // Anzahl der Bu
 <>                                                              // ungleich
 <==                                                             // kleiner oder gleich
 >==                                                             // größer oder gleich
+
+Scrollbar
+.kind := sbVertical                                             // Vertikale oder Horizontale Ausrichtung
+         sbHorizontal
+.min                                                            // Minimum der Scrollbar festlegen
+.max                                                            // Maximum der Scrollbar festlegen
+.position                                                       // Startposition festlegen
+.smallchange                                                    // kleine oder größe Änderung beim scrolln
+
+OnKeyUp                                                         // Wenn Taste gedrückt
+OnKeyDown                                                       // Wenn keine Taste gedrückt
+OnEnter                                                         // Wenn etwas fokussiert wird (Tab-Taste)
+OnExit                                                          // Wenn etwas den Fokus verliert (Tab-Taste)
+Alignment                                                       // Text in der Mitte / Links / Rechts
+
+try                                                             // Beispielsweise wenn ein Int in der Eingabe erwartet wird aber der Benutzer ein String eingibt
+(was versucht werden soll auszuführen)                          // ein String eingibt Dann wird das beim except passieren statt einer Fehleranzeige
+except                                                          // !!! Wichtig dabei auf Tools -> Debugger-Optionen -> "Bei Delphi-Exceptions stoppen" ausstellen
+(was passieren soll wenn es nicht klappt)                       // !!! damit übernimmt man das Abfangen von Ausnahme-Fehlern (Exceptions) (S.95)
+if (Bedingung1) and bzw. or (Bedingung2)                        // Bedingungen in Klammern setzten !!!
+AB.SetFocus                                                     // Fokus wird gesetzt z.B. im Edit Feld damit nicht immer draufgeklickt werden muss
+inc(Variable, Schritte)                                         // z.B. inc(zaeler, 5) = zaeler := zaeler + 5 addiert jedes mal zu der variable v  x Schritte hinzu
+dec(Variable, Schritte)                                         // z.B. inc(zaeler, 5) = zaeler := zaeler - 5 subtrahiert jedes mal x Schritte von der Variable v
+close                                                           // Anwendung wird beendet
