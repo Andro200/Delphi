@@ -65,3 +65,16 @@ dec(Variable, Schritte)                                         // z.B. inc(zael
 close                                                           // Anwendung wird beendet
 ClientWidth                                                     // Breite der Anwendung
 ClientHeight                                                    // Höhe der Anwendung
+case ListBox.ItemIndex of                                       // ListBox.ItemIndex Nummer des Eintrages in der Liste die Gerade aktviert ist
+  0: AB := 'Text';                                              // Ersetzt viele If Bedingungen
+  1: AB := 'Text2';                                             // if ListBox.ItemIndex = 0 then AB := 'Text' 
+end;
+// Falls eine Variable oder Eigenschaft einen der folgenden Werte hat soll der Computer eine zugehörige Anweisung ausführen 
+
+
+  
+  
+  
+  
+  
+  
