@@ -63,3 +63,5 @@ AB.SetFocus                                                     // Fokus wird ge
 inc(Variable, Schritte)                                         // z.B. inc(zaeler, 5) = zaeler := zaeler + 5 addiert jedes mal zu der variable v  x Schritte hinzu
 dec(Variable, Schritte)                                         // z.B. inc(zaeler, 5) = zaeler := zaeler - 5 subtrahiert jedes mal x Schritte von der Variable v
 close                                                           // Anwendung wird beendet
+ClientWidth                                                     // Breite der Anwendung
+ClientHeight                                                    // Höhe der Anwendung
