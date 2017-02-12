@@ -32,6 +32,7 @@ const Max = 12                                                  // Wird vor var 
 var a:single;                                                   // Andere Bezeichnung für Float oder Real - Gibt Dezimalzahlen an
     b:double;                                                   // wie single aber meist unnötig - gibt ein genaueres Ergebnis an
     c:boolean;                                                  // Datentyp c , dem wahr oder falsch zugeordnet werden kann
+    Text: Array[x..y] of String                                 // (x = Anfangswert) (y = Endwert) = TextX, TextX+1 ... TextY : String = also ganz viele Strings 
 showmessage('xy')                                               // xy = Text der angezeigt wird z.B. Fehlermeldung 
 length (Edit1.Text)                                             // Anzahl der Buchstaben in Edit1.Text
 > <                                                             // kleiner - größer als
@@ -65,14 +66,17 @@ dec(Variable, Schritte)                                         // z.B. inc(zael
 close                                                           // Anwendung wird beendet
 ClientWidth                                                     // Breite der Anwendung
 ClientHeight                                                    // Höhe der Anwendung
-case ListBox.ItemIndex of                                       // ListBox.ItemIndex Nummer des Eintrages in der Liste die Gerade aktviert ist
+
+Optionsfeld                                                     // Bei einer Gruppe von zusammengehörigen Dinge kann immer nur eins ausgewählt werden
+(RadioButton , Radiogroup)                                      // Bei einer Gruppe von zusammengehörigen Dinge können beliebig viele aktiviert sein
+Rightclick -> Element -> Nach hinten bzw. vorne setzen          // Versetzt ein Element in den Vorder- bzw. Hintergrund  
+
+case RadioGroup1.ItemIndex of                                   // RadioGroup1.ItemIndex Nummer des Eintrages in der Liste die Gerade aktviert ist
   0: AB := 'Text';                                              // Ersetzt viele If Bedingungen
   1: AB := 'Text2';                                             // if ListBox.ItemIndex = 0 then AB := 'Text' 
 end;
 // Falls eine Variable oder Eigenschaft einen der folgenden Werte hat soll der Computer eine zugehörige Anweisung ausführen 
-
-
-  
+ 
   
   
   
